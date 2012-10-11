@@ -1,0 +1,10 @@
+name = Paioo user
+description = Restructure the user edit into 3 tabs - edit account, edit profile, and change password
+package = Paioo
+core = 7.x
+
+files[] = paioo_user.module
+files[] = paioo_user.install
+files[] = paioo_user.pages.inc
+files[] = paioo_user.test
+
