@@ -97,7 +97,7 @@ function paioo_user_form_paioo_user_account_form_alter(&$form, &$form_state) {
   // need to explicitly check that we aren't on the "Edit profile" form or on a
   // different category under "Edit account", since this alter hook gets called
   // in those contexts also.)
-  if ($form_id != 'paioo_user_profile_form' && $form['#user_category'] == 'account') {
+  if ($form['#user_category'] == 'account') {
     foreach (array_keys(field_info_instances('user', 'user')) as $field_name) {
       $form[$field_name]['#access'] = FALSE;
     }
